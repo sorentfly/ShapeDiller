@@ -28,12 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.pano = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.pano)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // pano
+            // 
+            this.pano.Location = new System.Drawing.Point(12, 92);
+            this.pano.Name = "pano";
+            this.pano.Size = new System.Drawing.Size(1260, 357);
+            this.pano.TabIndex = 0;
+            this.pano.TabStop = false;
+            this.pano.Paint += new System.Windows.Forms.PaintEventHandler(this.pano_Paint);
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1260, 74);
+            this.panel1.TabIndex = 1;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(1284, 461);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pano);
+            this.MaximizeBox = false;
+            this.Name = "Form1";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "ShapeDiller";
+            ((System.ComponentModel.ISupportInitialize)(this.pano)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.PictureBox pano;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

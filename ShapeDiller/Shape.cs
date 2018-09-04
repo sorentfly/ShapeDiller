@@ -30,6 +30,9 @@ namespace ShapeDiller
 
         }
 
-        
+        public void Draw()
+        {
+
+        }
     }
 }
